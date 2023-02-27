@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-color: #df3a796c;
+    --second-color: #df3a79b6;
+    --third-color: #b1416cbe;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*BARRA DE ROLAGEM*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/*TRILHOS*/
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+/*SINALIZADOR DA PÁGINA*/
+::-webkit-scrollbar-thumb{
+    background: var(--second-color);
+    border-radius: 2px;
+}
+
+/*SINALIZADOR DA PÁGINA ON HOVER*/
+::-webkit-scrollbar-thumb:hover{
+    background: var(--third-color) ;
+}
+/*BARRA DE NAVEGAÇÃO*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.nav-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-items > li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+}
+
+.nav-items > li > a:hover{
+    color: var(--second-color);
+    transition: .5s ease-in-out;
+}
+
+
+/*HEADER*/
+
+.header-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #df3a796c;
+    color: white;  
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; 
+    align-items: flex-start; */
+    box-sizing: border-box;
+    /* padding: 0 112px; */
+    position: relative;
+}
+
+/*IMAGE
+
+.img{
+    width: 25em;
+    margin-left: 110vh;
+    margin-top: -15vw;
+}
+*/
+
+
+/*TEXTOS H1 E H2*/
+#h1-header{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+#h2-header{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+
+
+/*LINKS*/
+.social-media{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    display: flex;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 4rem;
+    border: 1px solid white;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a:hover{
+    background-color: #df3a796c;
+}
+
+
+/*MENU hambúrguer*/
+
+/* .checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace{
+    width: 50px;
+    height: 2px;
+    background-color: #df3a796c;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1){
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2){
+    top: 40px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3){
+    top: 54px;
+    transform: rotate(0);
+}
+
+#toggle{
+    display: none;
+}
+ */
+
+
+/* .menu{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background: transparent;
+    height: 4px;
+    width: 40px;
+    border-radius: 90%;
+    box-shadow: 0px 0px 0px 0px white;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+ */
+/* .menu-items{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+} */
+
+/* .menu-items ul{
+    list-style-type: none;
+}
+
+.menu-items ul li a{
+    margin: 10px 0;
+    color: #df3a796c;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.menu-items ul li a {
+    background-color: transparent;
+}
+
+.menu-items ul li a:hover{
+    color: var(--second-color);
+    transition: .5s ease-in-out;
+} */
+
+
+/*ANIMÇÃO DAS LINHAS*/
+
+/* #toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+/*ANIMAÇÃO DO MENU*/
+
+/* #toggle:checked + .checkbox{
+    background-color: white;
+}
+
+#toggle:checked ~ .menu{
+    box-shadow: 0px 0px 0px 100vmax white;
+    z-index: 1;
+    transition: 400ms ease-in-out;
+}
+
+#toggle:checked ~ .menu-items{
+    visibility: visible;
+    z-index: 2;
+    transition: 400s ease-in-out;
+}   */
+
+
+
+/* ul{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+}
+.nav-items{
+    gap: 30rem;
+    margin-top: -30vh;
+    display: flex;
+    list-style: none;
+    margin-left: 30vw;
+}
+
+.nav-items > li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+}
+
+.nav-items > li> a:hover{
+    color: var(--second-color);
+    transition: .5s ease-in-out;
+}
+ */
+
+
+
+
+/*SOBRE MIM*/
+
+.container-about{
+    background-color: rgba(247, 218, 241, 0.349);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme > h1{
+    margin-top: 8vh;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3.5rem;
+}
+.aboutme > p{
+    color: var(--second-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 650;
+    letter-spacing: 4px;
+    margin: 8vh;
+}
+h2{
+    margin-right: 1vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
+
+.softskills-area,
+.hardskills-area{
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+    margin-left: 15vw;
+    margin-right: 5vw;
+}
+
+.elements-soft > ul li {
+    width: 100vh;
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.elements-hard > ul li{
+    width: 100vh;
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+/*PROJETOS*/
+
+/*CARD DOS PROJETOS*/
+.projects-label{
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3.5rem;
+}
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #df3a796c;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    -o-transition: all 0.5s 0s ease-in-out;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.card-text{
+    display: flex;
+    width: 40%;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.card-wrapper{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.card-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    -webkit-transition: all 0.5s 0s ease-in-out;
+    -moz-transition: all 0.5s 0s ease-in-out;
+    -o-transition: all 0.5s 0s ease-in-out;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.card-wrapper h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    -webkit-transition: all 0.5s 0s ease-in-out;
+    -moz-transition: all 0.5s 0s ease-in-out;
+    -o-transition: all 0.5s 0s ease-in-out;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+/*A COSTUMIZAÇÃO DO P SERÁ DIFERENTE, POIS ELE SÓ SERÁ VISÍVEL QUANDO O MOUSE FICAR EM CIMA DO CARD*/
+.card-wrapper p{
+    font-size: 0; 
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s 0s ease-in-out;
+    -moz-transition: all 0.5s 0s ease-in-out;
+    -o-transition: all 0.5s 0s ease-in-out;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+/*O SIMBOLO DE > QUER DIZER QUE ESTÁ SE REFERINDO AO FILHO DO CARD, QUE NO CASO É O CARD-WRAPPER::BEFORE, JÁ QUE ELE SE ENCONTRA DELE DELE NO ARQUIVO HTML.*/
+.card:hover > .card-wrapper::before{
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #df3a796c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer > p{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer > a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer > a:hover{
+    color: var(--second-color);
+    transition: .5s ease-in-out;
+}
